@@ -5,9 +5,16 @@
     <meta charset="utf-8">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= action_cable_meta_tag %>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.css"
+      />
+    <script src="http://127.0.0.1:8887/rrweb.js"></script>
     <%= stylesheet_link_tag 'application', media: 'all',
                                            'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
   <body>
     <nav class="navbar navbar-fixed-top navbar-inverse">
